@@ -1,0 +1,22 @@
+<suite name="TutorialsNinja – SQE Selenium Suite" verbose="2">
+
+    <test name="Functional + Smoke + UI + E2E Tests" groups="functional,smoke,ui,e2e">
+        <classes>
+            <class name="RegistrationTests"/>
+            <class name="LoginTests"/>
+            <class name="AddToCartRegisteredTests"/>
+            <class name="AddToCartGuestTests"/>
+            <class name="RemoveFromCartTests"/>
+            <class name="LogoutTests"/>
+        </classes>
+    </test>
+
+    <test name="Cross-Browser Tests" groups="crossbrowser">
+        <classes>
+            <class name="LoginTests"/>
+            <class name="AddToCartGuestTests"/>
+            <class name="LogoutTests"/>
+        </classes>
+    </test>
+
+</suite>
